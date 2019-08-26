@@ -6,13 +6,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.Observer
 
-/**
- * As far LiveData was chosen as the source of observations,
- * the main purpose of these extensions is to add additional functionality
- * and not bloat the project with RxJava dependencies.
- *
- */
-
 fun <T> LiveData<T>.debounce(duration: Long = 1000L) = MediatorLiveData<T>().also { mld ->
     val source = this
     val handler = Handler(Looper.getMainLooper())

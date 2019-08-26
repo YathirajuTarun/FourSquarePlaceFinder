@@ -7,4 +7,5 @@
     <color name="colorGrayLight15Opacity">#26808080</color>
     <color name="colorWhite">#FFF</color>
     <color name="colorPrimary15opacity">#26106AD8</color>
+    <color name="image_background">#062760</color>
 </resources>

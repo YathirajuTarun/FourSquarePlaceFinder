@@ -61,7 +61,8 @@
                             app:selected="@{viewModel.isSelected}"
                             android:background="@android:color/transparent"
                             android:padding="8dp"
-                            app:srcCompat="@drawable/start_selector"/>
+                            app:srcCompat="@drawable/start_selector"
+                            tools:ignore="ContentDescription"/>
                 </androidx.appcompat.widget.Toolbar>
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>

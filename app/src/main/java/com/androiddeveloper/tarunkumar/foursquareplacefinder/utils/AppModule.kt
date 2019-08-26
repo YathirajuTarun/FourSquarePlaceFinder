@@ -9,6 +9,7 @@ import com.androiddeveloper.tarunkumar.foursquareplacefinder.repository.Favorite
 import com.androiddeveloper.tarunkumar.foursquareplacefinder.repository.PlacesRepository
 import com.androiddeveloper.tarunkumar.foursquareplacefinder.repository.PlacesRepositoryImpl
 import com.androiddeveloper.tarunkumar.foursquareplacefinder.viewmodel.DetailViewModel
+import com.androiddeveloper.tarunkumar.foursquareplacefinder.viewmodel.SearchViewModel
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -55,6 +56,6 @@ val repositoryModule = module {
 }
 
 val viewModelModule = module {
-//    viewModel { SearchViewModel(get(), get(), get()) }
+    viewModel { SearchViewModel(get(), get(), get()) }
     viewModel { (id: String) -> DetailViewModel(id, get(), get(), get()) }
 }

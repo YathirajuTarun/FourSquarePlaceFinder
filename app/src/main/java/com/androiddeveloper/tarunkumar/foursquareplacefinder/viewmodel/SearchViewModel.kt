@@ -3,6 +3,7 @@ package com.androiddeveloper.tarunkumar.foursquareplacefinder.viewmodel
 import android.os.Parcel
 import android.os.Parcelable
 import androidx.lifecycle.*
+import com.androiddeveloper.tarunkumar.foursquareplacefinder.R
 import com.androiddeveloper.tarunkumar.foursquareplacefinder.network.Venue
 import com.androiddeveloper.tarunkumar.foursquareplacefinder.repository.FavoritesRepository
 import com.androiddeveloper.tarunkumar.foursquareplacefinder.repository.PlacesRepository
@@ -63,7 +64,7 @@ class SearchViewModel(
 
     fun onMapViewClick(listener: MapClickHandler) {
         if (venuesLiveData.value.isNullOrEmpty()) {
-//            listener.showError(resourceProvider.getString(R.string.no_content_msg))
+            listener.showError(resourceProvider.getString(R.string.no_content_msg))
         } else {
             listener.showMap(venuesLiveData.value!!)
         }

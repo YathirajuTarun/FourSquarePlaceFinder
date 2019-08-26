@@ -21,14 +21,15 @@
                 android:id="@+id/ivVenue"
                 android:layout_width="80dp"
                 android:scaleType="centerCrop"
-                android:background="@color/colorGrayLight"
+                android:background="@color/image_background"
                 tools:srcCompat="@drawable/ic_tag_faces_black_24dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                tools:ignore="ContentDescription"/>
 
         <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toEndOf="@+id/ivVenue"
                 tools:layout_editor_absoluteY="4dp">
@@ -36,7 +37,7 @@
                     android:id="@+id/itemName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name"
+                    tools:text="Name"
                     android:textAppearance="?attr/textAppearanceListItem"
                     android:textStyle="bold"/>
 
@@ -44,14 +45,14 @@
                     android:id="@+id/tvCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Category"
+                    tools:text="Category"
                     android:textAppearance="?attr/textAppearanceListItem"/>
 
             <TextView
                     android:id="@+id/tvAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Address"
+                    tools:text="Address"
                     android:textAppearance="?attr/textAppearanceListItemSecondary"
                     android:textColor="@color/colorPrimaryDark"/>
 
@@ -59,7 +60,7 @@
                     android:id="@+id/tvDistance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Distance"
+                    tools:text="Distance"
                     android:textAppearance="?attr/textAppearanceListItemSecondary"/>
         </LinearLayout>
     </LinearLayout>
@@ -70,6 +71,6 @@
             android:layout_gravity="end"
             android:background="@android:color/transparent"
             app:srcCompat="@drawable/start_selector"
-            android:layout_marginTop="6dp"/>
-
+            android:layout_marginTop="6dp"
+            tools:ignore="ContentDescription"/>
 </androidx.cardview.widget.CardView>
